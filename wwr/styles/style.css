@@ -268,7 +268,7 @@ header #logo_link {
 	gap: 30px;
 }
 
-#faq-page nav {
+.menu-aside nav {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
