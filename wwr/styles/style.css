@@ -261,7 +261,7 @@ header #logo_link {
 #faq-page .container {
 	/* margin: auto; */
 	min-height: 100vh;
-	padding: 40px;
+	padding: 50px;
 
 	display: flex;
 	flex-direction: row;
@@ -291,6 +291,7 @@ header #logo_link {
 
 #faq-page .content {
 	margin: 0 auto;
+	padding: 0px 50px;
 }
 
 #faq-page #faq-hero .page-title {
@@ -306,7 +307,7 @@ header #logo_link {
 #faq-page #faq-hero .gallery {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 200px;
+	grid-template-rows: 300px;
 	gap: 60px;
 	justify-content: space-between;
 }
