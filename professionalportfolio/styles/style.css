@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+	/* change the values below to your colors from your palette */
+	--primary-color: #6375ae;
+	--secondary-color: #f2eee3;
+	--accent1-color: #c6c9d3;
+	--accent2-color: #000501;
+
+	/* change the values below to your chosen font(s) */
+	--heading-font: 'Roboto', sans-serif;
+	--paragraph-font: 'Noto Sans', sans-serif;
+
+	/* these colors below should be chosen from among your palette colors above */
+	--headline-color-on-white: #396e94; /* headlines on a white background */
+	--headline-color-on-color: white; /* headlines on a colored background */
+	--paragraph-color-on-white: #396e94; /* paragraph text on a white background */
+	--paragraph-color-on-color: white; /* paragraph text on a colored background */
+	--paragraph-background-color: #396e94;
+	--nav-link-color: #000501;
+	--nav-background-color: #6375ae;
+	--nav-hover-link-color: #6375ae;
+	--nav-hover-background-color: #396e94;
+
+	/* standards spacings */
+	--sides-padding: 0px 50px;
+	--margin-bottom-block: 70px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+
+	font-size: 16px;
+
+	font-family: var(--heading-font);
+}
+
+/* header */
+header {
+	padding: 30px 40px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header .logo {
+	min-width: 200px;
+	width: 20%;
+}
+
+header nav {
+	width: 35%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 40px;
+}
+
+a {
+	color: var(--nav-link-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--nav-hover-link-color);
+	text-decoration: underline;
+}
+
+.page-title {
+	font-size: 28px;
+	text-align: center;
+}
+
+.page-title span {
+	color: var(--primary-color);
+	font-size: 28px;
+	text-transform: uppercase;
+	text-decoration: underline var(--accent2-color);
+}
+
+/* hero */
+
+#hero {
+	margin: 20px 0;
+}
+
+#hero-img {
+	width: 100%;
+	margin: 30px 0;
+}
+
+.home-main {
+	padding: var(--sides-padding);
+}
+
+.menu-summary-container {
+	margin-bottom: var(--margin-bottom-block);
+	display: flex;
+	gap: 50px;
+}
+
+.menu-aside {
+	min-width: 285px;
+	height: fit-content;
+	padding: 25px;
+	border: 1px solid var(--accent2-color);
+}
+
+.menu-aside nav {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.block-title {
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+
+#summary-about-me .block-title {
+	margin-bottom: 20px;
+}
+
+#summary-about-me span {
+	display: block;
+	margin-bottom: 25px;
+}
+
+/* contact-info */
+
+#contact-info {
+	margin-bottom: var(--margin-bottom-block);
+}
+
+.contact-info-items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact-info-items a {
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+}
+
+.contact-info-item .icon {
+	width: 60px;
+	height: 60px;
+	border: 1px solid var(--accent2-color);
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.contact-info-item .icon:last-child {
+	padding: 13px;
+}
+
+.contact-info-item .icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* skills */
+
+#skills {
+	margin-bottom: var(--margin-bottom-block);
+}
+
+.skills-group-box {
+	margin-bottom: 25px;
+
+	display: flex;
+	gap: 20px;
+}
+
+.skills-group-box h3 {
+	font-weight: normal;
+}
+
+.skills-group-box .badge {
+	border: 1px solid var(--accent2-color);
+	border-radius: 5px;
+	padding: 2px 5px;
+}
+
+/* top-job-experiences */
+#top-job-experiences {
+	margin-bottom: var(--margin-bottom-block);
+}
+
+.job-experience {
+	margin-bottom: 100px;
+
+	display: flex;
+	gap: 40px;
+}
+
+.img-container {
+	width: 35%;
+}
+
+.job-experience .content h3 {
+	margin-bottom: 15px;
+}
+
+.job-experience .content a {
+	color: var(--primary-color);
+	text-decoration: underline;
+}
+
+/* feedback-recommendations */
+#feedback-recommendations {
+	margin-bottom: var(--margin-bottom-block);
+}
+
+.recommendations {
+	display: grid;
+	grid-template-columns: 300px 300px 300px;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.recommendations section {
+	text-align: center;
+}
+
+.recommendations section img {
+	width: 35%;
+}
+
+.recommendations section h3 {
+	margin: 20px 0;
+}
+
+/* metrics */
+#metrics {
+	margin: 140px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 80px;
+}
+
+#metrics .block-title {
+	margin: 0;
+}
+
+.metric-item {
+	text-align: center;
+}
+
+.metric-item h3 {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+/* final-words */
+#final-words {
+	margin-bottom: var(--margin-bottom-block);
+	display: grid;
+	grid-template-columns: 280px 280px 280px;
+	justify-content: center;
+}
+
+.final-word img {
+	width: 100%;
+}
+
+.final-word h2 {
+	font-size: 16px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.final-word:nth-child(1) {
+	grid-column: 1/2;
+}
+
+.final-word:nth-child(2) {
+	grid-column: 3/4;
+}
+
+footer {
+	border-top: solid 1px var(--accent2-color);
+	padding: var(--sides-padding);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer p:first-child {
+	font-size: 22px;
+	text-align: center;
+	margin-right: 60px;
+}
+
+footer .social {
+	width: 130px;
+}
