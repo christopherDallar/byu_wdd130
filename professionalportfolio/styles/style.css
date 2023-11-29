@@ -12,11 +12,11 @@
 	--paragraph-font: 'Noto Sans', sans-serif;
 
 	--nav-link-color: #000501;
-	--nav-hover-link-color: #c6c9d3;
+	--nav-hover-link-color: #000501;
 
 	/* standards spacings */
 	--sides-padding: 0px 50px;
-	--margin-bottom-block: 70px;
+	--margin-bottom-block: 150px;
 }
 
 * {
@@ -50,6 +50,18 @@ h5 {
 	color: var(--accent1-color);
 }
 
+.bg-primary {
+	background: var(--primary-color);
+}
+
+.bg-secondary {
+	background: var(--secondary-color);
+}
+
+.bg-accent1 {
+	background: var(--accent1-color);
+}
+
 /* header */
 header {
 	padding: 30px 40px;
@@ -81,6 +93,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+#page {
+	max-width: 1829px;
+	margin: 0 auto;
+}
+
 .page-title {
 	font-size: 28px;
 	text-align: center;
@@ -105,11 +122,8 @@ a:hover {
 	margin: 30px 0;
 }
 
-.home-main {
-	padding: var(--sides-padding);
-}
-
 .menu-summary-container {
+	padding: var(--sides-padding);
 	margin-bottom: var(--margin-bottom-block);
 	display: flex;
 	gap: 50px;
@@ -143,9 +157,9 @@ a:hover {
 }
 
 /* contact-info */
-
 #contact-info {
 	margin-bottom: var(--margin-bottom-block);
+	padding: 40px 50px;
 }
 
 .contact-info-items {
@@ -185,6 +199,7 @@ a:hover {
 
 #skills {
 	margin-bottom: var(--margin-bottom-block);
+	padding: var(--sides-padding);
 }
 
 .skills-group-box {
@@ -211,8 +226,13 @@ a:hover {
 	margin-bottom: var(--margin-bottom-block);
 }
 
+#top-job-experiences h2 {
+	padding-left: 50px;
+}
+
 .job-experience {
 	margin-bottom: 100px;
+	padding: 80px 50px;
 
 	display: flex;
 	gap: 40px;
@@ -223,6 +243,7 @@ a:hover {
 }
 
 .job-experience .content h3 {
+	color: var(--accent2-color);
 	margin-bottom: 15px;
 }
 
@@ -231,9 +252,14 @@ a:hover {
 	text-decoration: underline;
 }
 
+.job-experience .content p {
+	color: var(--accent2-color);
+}
+
 /* feedback-recommendations */
 #feedback-recommendations {
 	margin-bottom: var(--margin-bottom-block);
+	padding: var(--sides-padding);
 }
 
 .recommendations {
@@ -258,6 +284,8 @@ a:hover {
 /* metrics */
 #metrics {
 	margin: 140px 0px;
+	padding: var(--sides-padding);
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -280,6 +308,7 @@ a:hover {
 /* final-words */
 #final-words {
 	margin-bottom: var(--margin-bottom-block);
+	padding: var(--sides-padding);
 	display: grid;
 	grid-template-columns: 280px 280px 280px;
 	justify-content: center;
