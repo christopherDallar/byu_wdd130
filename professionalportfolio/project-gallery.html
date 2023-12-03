@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Portfolio | Christopher Dallar | Project Gallery</title>
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -22,19 +23,20 @@
     </header>
 
     <main class="project-gallery-main">
-      <h1>Project Gallery</h1>
+      <h1 class="block-title text-primary">Project Gallery</h1>
 
       <div id="top-job-experiences">
 
-        <section class="job-experince">
-          <div class="img-container">
-            <img src="images/project_gallery_1.jpeg" alt="Hospitalito Project Experience">
-          </div>
+        <section class="job-experience bg-primary">
+
+          <img src="images/project_gallery_1.jpeg" alt="Hospitalito Project Experience" class="img-container zoomImg">
+
           <div class="content">
             <h3>Hospitalito</h3>
 
-            <p>
-              Visit <a href="https://hospitalito.com.ve" target="_blank">https://hospitalito.com.ve</a> to view the
+            <p class="text-secondary">
+              Visit <a class="text-accent1" href="https://hospitalito.com.ve"
+                target="_blank">https://hospitalito.com.ve</a> to view the
               corporate website of
               the Salud Premium Club Hospitalito. I
               worked on the creation of the self-manageable template compatible with WordPress. MATIZ did the executive
@@ -43,10 +45,10 @@
           </div>
         </section>
 
-        <section class="job-experince">
-          <div class="img-container">
-            <img src="images/project_gallery_2.jpeg" alt="CCCB Project Experience">
-          </div>
+        <section class="job-experience bg-secondary">
+
+          <img src="images/project_gallery_2.jpeg" alt="CCCB Project Experience" class="img-container zoomImg">
+
           <div class="content">
             <h3>CCCB</h3>
 
@@ -60,10 +62,10 @@
           </div>
         </section>
 
-        <section class="job-experince">
-          <div class="img-container">
-            <img src="images/project_gallery_3.jpeg" alt="French Alliance Of Barquisimeto">
-          </div>
+        <section class="job-experience bg-accent1">
+
+          <img src="images/project_gallery_3.jpeg" alt="French Alliance Of Barquisimeto" class="img-container zoomImg">
+
           <div class="content">
             <h3>French Alliance Of Barquisimeto</h3>
 
@@ -78,22 +80,20 @@
         </section>
 
       </div>
-
     </main>
 
-    <footer>
-      <p>Christopher Personal Portfolio &copy; 2023 - Christopher Dallar</p>
+    <footer class="bg-accent1">
+      <p>Christopher Personal Portfolio <br /> &copy; 2023 - Christopher Dallar</p>
       <p><a href="index.html">Home</a></p>
       <p><a href="contact.html">Contact</a></p>
       <p><a href="project-gallery.html">Project Gallery</a></p>
       <p><a href="site-plan.html">Site plan</a></p>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">
-          <img src="images/linkedin-brand.png" alt="LinkedIn logo" />
-        </a>
-      </div>
-    </footer>
 
+      <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">
+        <img src="images/linkedin-brand.png" alt="LinkedIn logo" class="social">
+      </a>
+
+    </footer>
   </div>
 </body>
 

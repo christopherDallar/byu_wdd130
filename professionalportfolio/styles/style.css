@@ -50,6 +50,10 @@ h5 {
 	color: var(--accent1-color);
 }
 
+.text-accent1 {
+	color: var(--accent2-color);
+}
+
 .bg-primary {
 	background: var(--primary-color);
 }
@@ -350,6 +354,26 @@ footer p:first-child {
 
 footer .social {
 	width: 130px;
+}
+
+/* project-gallery-main */
+
+.project-gallery-main h1 {
+	text-align: center;
+	margin: 110px 0;
+	font-size: 30px;
+}
+
+.project-gallery-main #top-job-experiences .job-experience:nth-child(1) h3 {
+	color: var(--secondary-color);
+}
+
+.project-gallery-main #top-job-experiences .job-experience:nth-child(1) p {
+	color: var(--secondary-color);
+}
+
+.project-gallery-main #top-job-experiences .job-experience:nth-child(1) p a {
+	color: var(--accent2-color);
 }
 
 /* IMG MODAL */
