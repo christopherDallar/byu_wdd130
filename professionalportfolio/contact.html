@@ -5,24 +5,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Professional Portfolio | Christopher Dallar | Contact</title>
+  <link type="text/css" rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <div id="contact-page">
-    <header>
+  <div id="page">
+    <header class="bg-accent1">
       <a href="index.html" id="logo_link">
-        <img src="images/logo-transparent.png" alt="Portfolio Christopher Dallar Logo" class="logo" />
+        <img src="images/logo-transparent.png" alt="Portfolio Christopher Dallar Logo" class="logo">
       </a>
 
       <nav>
         <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+          <a class="dropbtn" href="contact.html"><span class="text-primary">Contact</span></a>
+          <div class="dropdown-content">
+            <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">My LinkedIn</a>
+          </div>
+        </div>
         <a href="project-gallery.html">Project Gallery</a>
       </nav>
     </header>
 
     <main class="contact-main">
-      <h1>Contact Info</h1>
+      <h1 class="page-title">Contact Info</h1>
 
       <div class="content">
         <div class="contact-info-items">
@@ -30,11 +36,11 @@
           <section class="contact-info-item">
             <a href="tel:+584245826117">
 
-              <div class="icon">
+              <div class="icon bg-secondary">
                 <img src="images/phone-icon.png" alt="Phone icon">
               </div>
 
-              <h2>04245826117</h2>
+              <h2 class="bg-primary">04245826117</h2>
 
             </a>
           </section>
@@ -42,11 +48,11 @@
           <section class="contact-info-item">
             <a href="mailto:christopherdallar1234@gmail.com">
 
-              <div class="icon">
+              <div class="icon bg-secondary">
                 <img src="images/email-icon.png" alt="Email icon">
               </div>
 
-              <h2>christopherdallar1234@gmail.com</h2>
+              <h2 class="bg-primary">christopherdallar1234@gmail.com</h2>
 
             </a>
           </section>
@@ -54,11 +60,11 @@
           <section class="contact-info-item">
             <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">
 
-              <div class="icon">
+              <div class="icon bg-secondary">
                 <img src="images/linkedin-icon.png" alt="LinkedIn icon">
               </div>
 
-              <h2>/in/christopher-dallar</h2>
+              <h2 class="bg-primary">/in/christopher-dallar</h2>
 
             </a>
           </section>
@@ -67,34 +73,34 @@
             <a href="https://drive.google.com/file/d/1615UqUKysAyu0AY_RbopjxtzZPLVjlqL/view?usp=drive_link"
               target="_blank">
 
-              <div class="icon">
+              <div class="icon bg-secondary">
                 <img src="images/resume-icon.png" alt="resume icon">
               </div>
 
-              <h2>Click here to see resume</h2>
+              <h2 class="bg-primary">Click here to see resume</h2>
 
             </a>
           </section>
 
         </div>
 
-        <img src="images/frame5.jpg" alt="Call Action to contact picture">
+        <img src="images/frame5.jpg" alt="Call Action to contact picture" class="call-action-picture">
 
       </div>
 
     </main>
 
-    <footer>
-      <p>Christopher Personal Portfolio &copy; 2023 - Christopher Dallar</p>
+    <footer class="bg-accent1">
+      <p>Christopher Personal Portfolio <br /> &copy; 2023 - Christopher Dallar</p>
       <p><a href="index.html">Home</a></p>
       <p><a href="contact.html">Contact</a></p>
       <p><a href="project-gallery.html">Project Gallery</a></p>
       <p><a href="site-plan.html">Site plan</a></p>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">
-          <img src="images/linkedin-brand.png" alt="LinkedIn logo" />
-        </a>
-      </div>
+
+      <a href="https://www.linkedin.com/in/christopher-dallar/" target="_blank">
+        <img src="images/linkedin-brand.png" alt="LinkedIn logo" class="social">
+      </a>
+
     </footer>
 
   </div>

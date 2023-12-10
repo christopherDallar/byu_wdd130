@@ -489,6 +489,44 @@ footer .social {
 	display: block;
 }
 
+.contact-main {
+	padding: var(--sides-padding);
+	padding-top: 150px;
+	padding-bottom: 150px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+}
+
+.contact-main h1 {
+	grid-area: 1/1;
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+.contact-main .content {
+	display: grid;
+	grid-template-columns: 1fr 100px 1fr;
+	grid-column: 1/4;
+}
+
+.contact-main .contact-info-items {
+	display: flex;
+	flex-direction: column;
+	justify-content: initial;
+	gap: 90px;
+}
+
+.contact-main .contact-info-item h2 {
+	padding: 5px 10px;
+	color: var(--secondary-color);
+}
+
+.call-action-picture {
+	width: 100%;
+	grid-column: 3/4;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
 	.modal-content {
